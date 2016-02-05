@@ -1,24 +1,2 @@
 <h1>Edit existing article</h1>
-<% if @article.errors.any? %>
-  <h2>These are the following errors</h2>
-  <ul>
-  <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-  <% end %>
-  </ul>
-<% end %>
-<%= form_for @article do |r| %>
-<p>
-  <%= r.label :title %><br/>
-  <%= r.text_field :title %>
-</p>
-<p>
-  <%= r.label :description %><br/>
-  <%= r.text_area :description %>
-</p>
-<p>
-  <%= r.submit %> 
-
-<% end %>
-
-<%= link_to "Back to Articles Listing",articles_path %>
+<%= render 'form' %>
