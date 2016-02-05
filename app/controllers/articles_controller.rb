@@ -30,6 +30,8 @@ class ArticlesController < ApplicationController
     end
   end
 
+  #comment
+
   def show
   end
 
