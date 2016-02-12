@@ -1,9 +1,9 @@
 <h1>Home</h1>
 <h2>Listing All Articles</h2>
 <p><%= link_to "Create New Article", new_article_path %></p>
-<table>
+<table class="table">
   <tr>
-    <th>Title</th>
+    <th class="padding-right">Title</th>
     <th>Description</th>
   </tr>
   <% @articles.each do |article| %>
@@ -11,7 +11,7 @@
     <td><%= article.title %></td>
     <td><%= article.description %></td>
     <td><%= link_to "Edit", edit_article_path(article) %></td>
-    <td><%= link_to "View", article_path(article) %></td>
+    <td class="padding-right"><%= link_to "View", article_path(article) %></td>
     <td><%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure?"} %></td>
   </tr>
   <% end %>
