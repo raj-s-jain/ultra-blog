@@ -6,6 +6,9 @@ gem 'rails', '4.2.4'
 
 #bcrypt for password authentication
 gem 'bcrypt', '~> 3.1.7'
+#pagination gem
+gem 'will_paginate', '~> 3.0.7'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
